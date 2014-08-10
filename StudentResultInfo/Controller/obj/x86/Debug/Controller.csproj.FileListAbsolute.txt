@@ -1,0 +1,29 @@
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\Controller.Main.resources
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\Controller.Properties.Resources.resources
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Database1.mdf
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Database1_log.ldf
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Controller.exe
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Controller.pdb
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\View.dll
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Model.dll
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\View.pdb
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\bin\Debug\Model.pdb
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\Controller.exe
+C:\Users\Biplab\documents\visual studio 2010\Projects\StudentResultInfo\Controller\obj\x86\Debug\Controller.pdb
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.exe
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.pdb
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Database1.mdf
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Database1_log.ldf
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Controller.exe
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Controller.pdb
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\View.dll
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Model.dll
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\View.pdb
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\bin\Debug\Model.pdb
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.Main.resources
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.Properties.Resources.resources
+C:\Users\KUCSE\Desktop\StudentResultInfo\Controller\obj\x86\Debug\Controller.csproj.GenerateResource.Cache
