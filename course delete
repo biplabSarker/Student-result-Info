@@ -1,0 +1,24 @@
+ public bool delCourse(string CName)
+        {
+            string Connectionstring = "Data Source=.\\SQLEXPRESS;AttachDbFilename=c:\\users\\biplab\\documents\\visual studio 2010\\Projects\\StudentResultInfo\\View\\Database1.mdf;Integrated Security=True;User Instance=True";
+            SqlConnection objConnection = new SqlConnection(Connectionstring);
+            objConnection.Open();
+            string Commandestring = "delete from Course Where CourseName='" + CName + "'";
+            SqlCommand objCommande = new SqlCommand(Commandestring, objConnection);
+            objCommande.ExecuteNonQuery();
+
+            objConnection.Close();
+            return true;
+        }
+
+
+private void btnDellCourse_Click(object sender, EventArgs e)
+        {
+            Course objCourse = new Course();
+            objCourse.delCourse(txtAddCourseName.Text);
+            DataSet objDataSet = objCourse.showCourse();
+            dataGridViewCourse.DataSource = objDataSet.Tables[0];
+            txtAddCourseName.Text = "";
+            txtAddCourseTitle.Text = "";
+            
+        }
