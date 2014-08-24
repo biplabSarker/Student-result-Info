@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Model;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace View
+{
+    public partial class AddCourseView : Form
+    {
+        public AddCourseView()
+        {
+            InitializeComponent();
+        }
+
+        private void btnAddCourse_Click(object sender, EventArgs e)
+        {
+            Course objCourse = new Course();
+            objCourse.getCourse(txtAddCourseName.Text,txtAddCourseTitle.Text);
+            DataSet objDataSet = objCourse.showCourse();
+            dataGridViewCourse.DataSource = objDataSet.Tables[0];
+            txtAddCourseName.Text = "";
+            txtAddCourseTitle.Text = "";
+        }
+
+        private void btnShowCourse_Click(object sender, EventArgs e)
+        {
+            Course objCourse = new Course();
+            DataSet objDataSet = objCourse.showCourse();
+            dataGridViewCourse.DataSource=objDataSet.Tables[0];
+        }
+
+       
+
+        private void DisplayStudent(string CourseCode)
+        {
+            string Connectionstring = "Data Source=.\\SQLEXPRESS;AttachDbFilename=c:\\users\\biplab\\documents\\visual studio 2010\\Projects\\StudentResultInfo\\View\\Database1.mdf;Integrated Security=True;User Instance=True";
+            SqlConnection objConnection = new SqlConnection(Connectionstring);
+            objConnection.Open();
+            string Commandestring = "Select * from Course Where CourseName='" + CourseCode + "'";
+            SqlCommand objCommande = new SqlCommand(Commandestring, objConnection);
+            DataSet objDataSet = new DataSet();
+            SqlDataAdapter objAdapter = new SqlDataAdapter(objCommande);
+            objAdapter.Fill(objDataSet);
+            String strCourseName = objDataSet.Tables[0].Rows[0][0].ToString();
+            String strCourseTitle = objDataSet.Tables[0].Rows[0][1].ToString();
+
+            txtAddCourseName.Text = strCourseName;
+            txtAddCourseTitle.Text = strCourseTitle;
+            objConnection.Close(); 
+        }
+        
+        private void dataGridViewCourse_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String strSelectedStudent = dataGridViewCourse.Rows[e.RowIndex].Cells[0].Value.ToString();
+            DisplayStudent(strSelectedStudent);
+        }
+
+        private void AddCourseView_Load(object sender, EventArgs e)
+        {
+            Course obj = new Course();
+            DataSet objDataSet = obj.showCourse();
+            dataGridViewCourse.DataSource = objDataSet.Tables[0];
+        }
+
+        private void btnDellCourse_Click(object sender, EventArgs e)
+        {
+            Course objCourse = new Course();
+            objCourse.delCourse(txtAddCourseName.Text);
+            DataSet objDataSet = objCourse.showCourse();
+            dataGridViewCourse.DataSource = objDataSet.Tables[0];
+            txtAddCourseName.Text = "";
+            txtAddCourseTitle.Text = "";
+            
+        }
+
+        private void btnChangeCourse_Click(object sender, EventArgs e)
+        {
+            Course obj = new Course();
+             obj.updateCourse(txtAddCourseName.Text,txtAddCourseTitle.Text);
+            
+            
+
+        }
+    
+    
+    
+    }
+}
