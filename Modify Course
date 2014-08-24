@@ -24,3 +24,11 @@ public bool updateCourse(string CName, string CTitle)
             }
         }
 
+private void btnChangeCourse_Click(object sender, EventArgs e)
+        {
+            Course obj = new Course();
+             obj.updateCourse(txtAddCourseName.Text,txtAddCourseTitle.Text);
+            
+            
+
+        }
