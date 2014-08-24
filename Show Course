@@ -1,0 +1,24 @@
+        public DataSet showCourse()
+        {
+            string Connectionstring = "Data Source=.\\SQLEXPRESS;AttachDbFilename=c:\\users\\biplab\\documents\\visual studio 2010\\Projects\\StudentResultInfo\\View\\Database1.mdf;Integrated Security=True;User Instance=True";
+            SqlConnection objConnection = new SqlConnection(Connectionstring);
+            objConnection.Open();
+            string Commandestring = "Select * from Course";
+            SqlCommand objCommande = new SqlCommand(Commandestring, objConnection);
+            DataSet objDataSet = new DataSet();
+            SqlDataAdapter objAdapter = new SqlDataAdapter(objCommande);
+            objAdapter.Fill(objDataSet);
+
+            objConnection.Close();
+            return objDataSet;
+
+        }
+
+
+
+ private void btnShowCourse_Click(object sender, EventArgs e)
+        {
+            Course objCourse = new Course();
+            DataSet objDataSet = objCourse.showCourse();
+            dataGridViewCourse.DataSource=objDataSet.Tables[0];
+        }
