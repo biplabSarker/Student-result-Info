@@ -1,6 +1,6 @@
 public DataSet getStudent()
         {
-            string Connectionstring = "Data Source=.\\SQLEXPRESS;AttachDbFilename=c:\\users\\biplab\\documents\\visual studio 2010\\Projects\\StudentResultInfo\\View\\Database1.mdf;Integrated Security=True;User Instance=True";
+            string Connectionstring = "Data Source=.\\SQLEXPRESS;AttachDbFilename=c:\\users\\samapti\\documents\\visual studio 2010\\Projects\\StudentResultInfo\\View\\Database1.mdf;Integrated Security=True;User Instance=True";
             SqlConnection objConnection = new SqlConnection(Connectionstring);
             objConnection.Open();
                 string Commandestring = "Select * from Student";
